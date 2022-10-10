@@ -7,7 +7,7 @@ function App() {
       
       <div className='main-todo-list'>
         <h1>My To-do's:</h1>
-        <Todo />
+        <Todo text='Aprender React'/>
       </div>
       
     </div>
