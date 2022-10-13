@@ -1,5 +1,5 @@
 import './App.css';
-import Todo from './components/Todo';
+import TodoList from './components/TodoList';
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       
       <div className='main-todo-list'>
         <h1>My To-do's:</h1>
-        <Todo text='Aprender React'/>
+        < TodoList />
       </div>
       
     </div>
