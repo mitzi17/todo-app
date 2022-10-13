@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../stylesheets/TodoForm.css'
+import { v4 as uuidv4 } from 'uuid'
 
 function TodoForm(props) {
 
@@ -13,10 +14,11 @@ function TodoForm(props) {
         e.preventDefault()
         
         const newTodo = {
-            id: '34545',
+            id: uuidv4(),
             text: input,
             complete: false
         }
+        props.onSubmit(newTodo)
     }
 
     return(
